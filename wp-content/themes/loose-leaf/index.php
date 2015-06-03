@@ -15,7 +15,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+            <h1 style="text-align: center;">About</h1>
+            <div class="row">
+                <p>This site has been made using WordPress, PHP, HTML, CSS, AJAX and GitHub</p>
+            </div>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
