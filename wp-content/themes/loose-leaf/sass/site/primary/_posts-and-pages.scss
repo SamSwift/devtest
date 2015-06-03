@@ -1,0 +1,166 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	color: $color__gray;
+	border-bottom: 4px solid $color__gray-light;
+	margin: 0 0 4em 0;
+	padding: 0 0 2em 0;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* Blog */
+.entry-header {
+	h1.entry-title {
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.entry-meta,
+.entry-footer {
+	@include font-size(1.4);
+	clear: both;
+	display: block;
+	overflow: hidden;
+
+	a {
+		text-decoration: none;
+	}
+
+	.dashicons {
+		line-height: inherit;
+		padding: 0.2em 0.4em;
+		height: auto;
+		width: auto;
+		@include font-size(1.4);
+	}
+
+	.posted-on,
+	.byline,
+	.cat-links,
+	.tags-links,
+	.comments-link {
+		margin-right: 1em;
+	}
+
+	.comments-link {
+		padding: 1em 0;
+
+		a {
+			color: $color__gray;
+		}
+
+		&.dashicons {
+		}
+	}
+
+	.cat-links,
+	.tags-links {
+		float: left;
+		margin: .6em 0 0 0;
+
+		li {
+			display: inline-block;
+			list-style: none;
+		}
+
+		a {
+			border: 2px solid  $color__gray;
+			color: $color__gray;
+			display: inline-block;
+			margin: 0 0.2em 0.2em 0;
+			padding: 0.2em 0.4em;
+
+			&:hover {
+				background: $color__gray;
+				border: 2px solid $color__gray;
+				color: #fff;
+			}
+		}
+	}
+
+	.cat-links {
+		.dashicons {
+			background: $color__blue;
+			border: 2px solid  $color__blue;
+			color: #fff;
+		}
+
+		a {
+			border: 2px solid $color__blue;
+			color: $color__gray;
+
+			&:hover {
+				background: $color__blue;
+				border: 2px solid $color__blue;
+				color: #fff;
+			}
+		}
+	}
+
+	.tags-links {
+		.dashicons {
+			background: lighten($color__gray, 10%);
+			border: 2px solid lighten($color__gray, 10%);
+			color: #fff;
+		}
+
+		a {
+			border: 2px solid lighten($color__gray, 10%);
+			color: lighten($color__gray, 10%);
+
+			&:hover {
+				background: lighten($color__gray, 10%);
+				border: 2px solid lighten($color__gray, 10%);
+				color: #fff;
+			}
+		}
+	}
+}
+
+.entry-footer {
+	clear: both;
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+.entry-footer,
+.entry-meta {
+
+	.dashicons {
+
+	}
+
+	.dashicons:before {
+
+
+	}
+}
+
+.edit-link {
+	clear: both;
+	display: block;
+}

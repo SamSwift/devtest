@@ -1,0 +1,57 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+a.button:visited,
+a.button:active,
+a.comment-reply-link,
+a.comment-reply-link:visited,
+a.comment-reply-link:active {
+	border: none;
+	@include border-radius(3px);
+	background: $color__background-button;
+	box-shadow: 0px 4px 0px $color__blue-dark, 0px 4px 4px rgba(0, 0, 0, 0.4);
+	color: $color__gray-light;
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	//-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	@include font-size(1.6);
+	line-height: 1;
+	padding: .6em 1em;
+	text-decoration: none;
+	@include transition(all, 200ms, linear);
+}
+
+a.button.large-btn {
+	@include font-size(2);
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+a.button:hover,
+a.comment-reply-link:hover {
+	background: $color__blue-dark;
+	box-shadow: 0px 4px 0px darken($color__blue-dark, 10%), 0px 4px 4px rgba(0, 0, 0, 0.4);
+	color: $color__gray-light;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+a.button:focus,
+a.comment-reply-link:focus {
+
+}
+
+a.comment-reply-link,
+a.comment-reply-link:visited,
+a.comment-reply-link:active  {
+	@include font-size(1.4);
+}

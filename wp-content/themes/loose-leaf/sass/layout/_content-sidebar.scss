@@ -1,0 +1,41 @@
+.site-content {
+	margin: 0 auto;
+	max-width: $size__wrapper-width;
+}
+
+.content-area {
+	float: left;
+	margin: 0 (-$size__site-sidebar) 0 0;
+	width: $size__site-main;
+
+	@include bp(medium) {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+}
+
+#content .site-main {
+	//margin: 0 $size__site-sidebar 0 0;
+
+	@include bp(medium) {
+		margin: 0;
+		padding: 1.6em;
+
+		.hentry {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: $size__site-sidebar;
+
+	@include bp(medium) {
+		float: none;
+		width: 100%;
+	}
+}

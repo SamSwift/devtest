@@ -1,0 +1,64 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: $size__wrapper-width;
+}
+
+.site-branding {
+	float: left;
+	@include transition(all, 200ms, linear);
+
+	@include bp(medium) {
+		float: none;
+		margin: 1.6em auto;
+		text-align: center;
+		width: auto;
+	}
+}
+
+.site-logo-link {
+	float: left;
+
+	img {
+		@include border-radius(200px);
+		margin-right: 1em;
+		max-width: 80px;
+	}
+
+	@include bp(medium) {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		width: auto;
+
+		img {
+			margin-right: 0;
+			max-width: 180px;
+		}
+	}
+}
+
+.main-navigation {
+
+}
+
+/* Welcome */
+.frontpage-header {
+	background: #000;
+	margin-bottom: 2.6em;
+	overflow: hidden;
+	text-align: center;
+
+	#welcome {
+		padding: 1.6em 0;
+	}
+
+	.welcome-message h1 {
+		clear: none;
+		color: #fff;
+		@include font-size(4.8);
+		margin: 0 auto;
+		padding: 1em;
+		width: 60%;
+	}
+}

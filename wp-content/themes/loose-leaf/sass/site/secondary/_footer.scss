@@ -1,0 +1,36 @@
+#tertiary {
+	padding: 0 1em;
+
+	.widget {
+		border-bottom: none;
+		clear: none;
+		float: left;
+		margin-right: 3%;
+		width: 22%;
+
+		h4 {
+			border-left: 4px solid $color__blue-light;
+			line-height: 14px;
+			margin: .6em 0 .4em 0;
+			padding: 0 0 0 4px;
+		}
+
+		@include bp(medium) {
+			width: 47%;
+		}
+
+		@include bp(small) {
+			float: none;
+			margin-right: 0;
+			width: 100%;
+		}
+
+		&:nth-child(4n) {
+			margin-right: 0;
+		}
+
+		ul {
+			list-style: none;
+		}
+	}
+}

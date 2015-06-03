@@ -1,0 +1,29 @@
+$color__blue-dark: #4F8699;
+$color__blue: #69B3CC;
+$color__blue-light: #84DFFF;
+$color__blue-light-light: #D0F3FF; /* I'll fix the name later */
+$color__gray-light: #F2F2F2;
+$color__gray: #7C7C7C;
+$color__red: darken(#e14d43, 20%);
+
+$color__background-dark: $color__blue-dark;
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: $color__blue;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: #69B3CC;
+$color__link-visited: darken($color__link, 10%);
+$color__link-hover: #4d869a;
+$color__text-main: #404040;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;

@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+.1 Main Layout
+--------------------------------------------------------------*/
+body {
+	background: $color__gray-light;
+}
+
+#masthead,
+#colophon {
+	background: $color__background-dark;
+	clear: both;
+	padding: 1.6em 0;
+}
+
+#content {
+	margin: 1.6em auto;
+
+	.site-main {
+		background: #fff;
+		padding: 2.6em;
+		margin-right: 28%;
+	}
+
+	.home & {
+		background: none;
+		padding: 1.6em 0;
+	}
+}
+
+/*--------------------------------------------------------------
+.2 Header
+--------------------------------------------------------------*/
+@import "layout/header";
+
+/*--------------------------------------------------------------
+.3 Footer
+--------------------------------------------------------------*/
+@import "layout/footer";
